@@ -1,0 +1,9 @@
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.pdb
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.pdb
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.pdb
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.pdb
