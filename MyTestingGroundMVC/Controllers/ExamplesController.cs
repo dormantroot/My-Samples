@@ -5,13 +5,50 @@ using System.Web;
 using System.Web.Mvc;
 using MyTestingGroundMVC.ViewData;
 using BL = MyTestingGround.BusinessLogic;
+using MyTestingGround.DomainObjects;
+using Trirand.Web.Mvc;
 
 namespace MyTestingGroundMVC.Controllers
 {
     public class ExamplesController: BaseController
     {
-        //
-        // GET: /Examples/
+        
+        #region ---------------------- PRIVATE PROPERTIES ----------------------
+
+        #endregion ------------------- PRIVATE PROPERTIES ----------------------
+
+        #region ---------------------- PUBLIC PROPERTIES ----------------------
+
+        #endregion ------------------- PUBLIC PROPERTIES ----------------------
+
+        #region ------------------------ CONSTRUCTORS -------------------------
+
+        #endregion --------------------- CONSTRUCTORS -------------------------
+
+        #region ----------------------- PRIVATE METHODS ------------------------
+
+        private void SetUpGrid(JQGrid ordersGrid)
+        {
+            // Customize/change some of the default settings for this model
+            // ID is a mandatory field. Must by unique if you have several grids on one page.
+            ordersGrid.ID = "EmployeeJqGrid";
+
+            // Setting the DataUrl to an action (method) in the controller is required.
+            // This action will return the data needed by the grid
+            ordersGrid.DataUrl = Url.Action("EmployeeJqGridDataRequested");
+           
+            // Customize search toolbar and other buttons
+            ordersGrid.ToolBarSettings.ShowSearchToolBar = false;           
+            ordersGrid.ToolBarSettings.ShowEditButton = true;
+            ordersGrid.ToolBarSettings.ShowAddButton = true;
+            ordersGrid.ToolBarSettings.ShowDeleteButton = true;
+            ordersGrid.EditDialogSettings.CloseAfterEditing = true;
+            ordersGrid.AddDialogSettings.CloseAfterAdding = true;          
+        }
+
+        #endregion--------------------- PRIVATE METHODS ------------------------
+
+        #region ----------------------- PUBLIC METHODS ------------------------
 
         public ActionResult Index()
         {
@@ -31,11 +68,10 @@ namespace MyTestingGroundMVC.Controllers
         }
 
 
+
         /// <summary>
-        /// Return state from the specified position
-        /// in the list.
+        /// Return the employees.
         /// </summary>
-        /// <param name="position">The position.</param>
         /// <returns></returns>
         public ActionResult Employees()
         {
@@ -46,25 +82,47 @@ namespace MyTestingGroundMVC.Controllers
             BL.Controllers.EmployeeController employeeController = new BL.Controllers.EmployeeController();
             viewData.Employees = employeeController.Employees().ToList();
 
-            return View("ShowExamples", viewData);
+            return View("EmployeeExample", viewData);
         }
 
 
-        public ActionResult GridData()
+        /// <summary>
+        /// Return employee data in EmployeeJqGridViewData model.
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult EmployeesGridData()
         {
-            var jsonData = new
-            {
-                total = 1, // we'll implement later 
-                page = 1,
-                records = 3, // implement later 
-                rows = new[]{
-                  new {id = 1, cell = new[] {"1", "-7", "Is this a good question?"}},
-                  new {id = 2, cell = new[] {"2", "15", "Is this a blatant ripoff?"}},
-                  new {id = 3, cell = new[] {"3", "23", "Why is the sky blue?"}}
-                }
-            };
-            return Json(jsonData);
+            // Setup the EmployeesJqGridModel
+            var employeeJqGridModel = new EmployeeJqGridViewData();
+            var employeesGrid = employeeJqGridModel.EmployeeGrid;            
+
+            // Customize
+            SetUpGrid(employeesGrid);
+
+            return View("EmployeeExample", employeeJqGridModel);
+        }       
+
+
+        // 
+        /// <summary>
+        /// This method is called when the EmployeeJqGrid requests data
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult EmployeeJqGridDataRequested()
+        {
+            // Setup the EmployeesJqGridModel
+            var employeeGridModel = new EmployeeJqGridViewData();            
+           
+            // Retrieve employees
+            BL.Controllers.EmployeeController employeeController = new BL.Controllers.EmployeeController();
+           
+            // return the result of the DataBind method, passing the datasource as a parameter
+            // jqGrid for ASP.NET MVC automatically takes care of paging, sorting, filtering/searching, etc
+            return employeeGridModel.EmployeeGrid.DataBind(employeeController.Employees().Cast<Employee>().AsQueryable());
         }
+        #endregion--------------------- PUBLIC METHODS ------------------------
+
+       
 
 
         ///// <summary>

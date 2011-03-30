@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 		Documentation\Architecture.vsd = Documentation\Architecture.vsd
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyTestingGround.Silverlight", "MyTestingGround.Silverlight", "{90D6029D-7C82-4665-B4DC-0B305697E0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloSilverlight", "HelloSilverlight\HelloSilverlight.csproj", "{CABE1F0C-A200-46F8-96BB-BEE8BF18971B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloSilverlight.Web", "HelloSilverlight.Web\HelloSilverlight.Web.csproj", "{D4602413-8DE1-4593-ACF0-213B1C26FD09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +50,14 @@ Global
 		{310C17D1-4A57-4436-A8CE-83D833C377F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{310C17D1-4A57-4436-A8CE-83D833C377F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{310C17D1-4A57-4436-A8CE-83D833C377F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABE1F0C-A200-46F8-96BB-BEE8BF18971B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABE1F0C-A200-46F8-96BB-BEE8BF18971B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABE1F0C-A200-46F8-96BB-BEE8BF18971B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABE1F0C-A200-46F8-96BB-BEE8BF18971B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4602413-8DE1-4593-ACF0-213B1C26FD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4602413-8DE1-4593-ACF0-213B1C26FD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4602413-8DE1-4593-ACF0-213B1C26FD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4602413-8DE1-4593-ACF0-213B1C26FD09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +65,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{90B9F8FD-F3E6-4771-9813-E4195C392BC0} = {DC69EAAE-48D3-4EF7-80A2-55331E8836E1}
 		{310C17D1-4A57-4436-A8CE-83D833C377F8} = {DC69EAAE-48D3-4EF7-80A2-55331E8836E1}
+		{CABE1F0C-A200-46F8-96BB-BEE8BF18971B} = {90D6029D-7C82-4665-B4DC-0B305697E0A6}
+		{D4602413-8DE1-4593-ACF0-213B1C26FD09} = {90D6029D-7C82-4665-B4DC-0B305697E0A6}
 	EndGlobalSection
 EndGlobal

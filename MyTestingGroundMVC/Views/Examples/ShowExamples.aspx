@@ -3,7 +3,6 @@
 <%@ Import Namespace="MyTestingGroundMVC.Helpers"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">	
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
    <%
@@ -15,10 +14,11 @@
            }
 
 
-           if (ViewData.ModelMetadata.ModelType == typeof(MyTestingGroundMVC.ViewData.EmployeeViewData))
+       //will remove this later
+          /* if (ViewData.ModelMetadata.ModelType == typeof(MyTestingGroundMVC.ViewData.EmployeeViewData))
            {
                Html.RenderPartial("Employees");
-           }
+           }*/
      
    %>
     

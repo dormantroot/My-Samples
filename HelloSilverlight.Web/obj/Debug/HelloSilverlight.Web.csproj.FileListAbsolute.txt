@@ -1,0 +1,5 @@
+C:\My Space\Development\My Testing Ground\MyTesting Ground\HelloSilverlight.Web\bin\HelloSilverlight.Web.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\HelloSilverlight.Web\bin\HelloSilverlight.Web.pdb
+C:\My Space\Development\My Testing Ground\MyTesting Ground\HelloSilverlight.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\My Space\Development\My Testing Ground\MyTesting Ground\HelloSilverlight.Web\obj\Debug\HelloSilverlight.Web.dll
+C:\My Space\Development\My Testing Ground\MyTesting Ground\HelloSilverlight.Web\obj\Debug\HelloSilverlight.Web.pdb
