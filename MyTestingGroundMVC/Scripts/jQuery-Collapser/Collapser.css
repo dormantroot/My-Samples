@@ -1,0 +1,15 @@
+﻿.collapser{
+	border: 1px solid #B9E3FF;
+	background: #0099FF;
+	padding-left: 5px;
+	color: #FFFFFF;
+}
+
+.panel{
+	border: 1px solid #B9E3FF;
+	padding: 10px;
+}   
+
+h4.collapser{
+	cursor: pointer;
+}     
