@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MyTestingGround.DomainObjects;
 using Trirand.Web.Mvc;
 using System.Web.UI.WebControls;
+using MyTestingGroundMVC.AdvWorksManagementService;
 
 namespace MyTestingGroundMVC.ViewData
 {
@@ -23,7 +23,7 @@ namespace MyTestingGroundMVC.ViewData
         /// the employees.
         /// </summary>
         /// <value>The Employees.</value>
-        public ICollection<IEmployee> Employees { get; set; }
+        public ICollection<Employee> Employees { get; set; }
 
         /// <summary>
         /// Gets or sets the subtitle.

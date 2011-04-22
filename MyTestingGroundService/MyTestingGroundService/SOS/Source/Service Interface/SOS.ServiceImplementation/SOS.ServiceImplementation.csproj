@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4A12552-8926-4589-9B80-7A28BBA52E5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOS.ServiceImplementation</RootNamespace>
+    <AssemblyName>SOS.ServiceImplementation.ServiceImplementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="CustomImplementation.cs" />
+    <Compile Include="GeneratedCode\AdventureWorksService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\MyTestingGround.BusinessLogic\MyTestingGround.BusinessLogic.csproj">
+      <Project>{46B2776F-7D16-4AA5-A390-98F194D8CBF2}</Project>
+      <Name>MyTestingGround.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\MyTestingGround.DataAccess\MyTestingGround.DataAccess.csproj">
+      <Project>{FFE19A3D-837A-47BE-B2AC-EA4794D4C6F8}</Project>
+      <Name>MyTestingGround.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\MyTestingGround.DomainObjects\MyTestingGround.DomainObjects.csproj">
+      <Project>{F66741F2-2CA5-4ED9-AB26-BF11D0F5F2D7}</Project>
+      <Name>MyTestingGround.DomainObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logic\SOS.BusinessEntities\SOS.BusinessEntities.csproj">
+      <Project>{CD7675D1-36F0-49DF-B280-EF22C24D8560}</Project>
+      <Name>SOS.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logic\SOS.BusinessLogic\SOS.BusinessLogic.csproj">
+      <Project>{5FC3FA5D-D3B5-4CAE-BC86-BAF0E7C8B10C}</Project>
+      <Name>SOS.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.DataContracts\SOS.DataContracts.csproj">
+      <Project>{6AEBD8C0-61DC-4BC4-8118-FADB1B317268}</Project>
+      <Name>SOS.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.FaultContracts\SOS.FaultContracts.csproj">
+      <Project>{1352B1E6-CF89-41FA-8AB6-7478A5A47BF8}</Project>
+      <Name>SOS.FaultContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.MessageContracts\SOS.MessageContracts.csproj">
+      <Project>{FC049481-C247-4DD5-A716-89796D95E38D}</Project>
+      <Name>SOS.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOS.ServiceContracts\SOS.ServiceContracts.csproj">
+      <Project>{689E7F38-D115-41EE-8C01-D108108A0A79}</Project>
+      <Name>SOS.ServiceContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

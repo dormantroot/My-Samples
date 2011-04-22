@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyTestingGroundMVC.ViewData.EmployeeJqGridViewData>" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="MyTestingGroundMVC.Helpers"%>
-<%@ Import Namespace="MyTestingGround.DomainObjects" %>
 <%@ Import Namespace="Trirand.Web.Mvc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Adventure Works Employee Example
@@ -23,6 +22,12 @@
 
 <%= Html.PageHeader(Model.Subtitle)%>
 
- <%= Html.Trirand().JQGrid(Model.EmployeeGrid, "JQGrid1") %>
+
+  <%
+       
+    
+      Html.RenderPartial("StateList");  
+     
+   %>
 
 </asp:Content>

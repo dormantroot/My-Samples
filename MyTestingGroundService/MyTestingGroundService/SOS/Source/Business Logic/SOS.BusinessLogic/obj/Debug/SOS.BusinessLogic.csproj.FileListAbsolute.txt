@@ -1,0 +1,9 @@
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.BusinessLogic.BusinessLogic.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.BusinessLogic.BusinessLogic.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.BusinessEntities.BusinessEntities.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.DataAccess.DataAccess.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.DataAccess.DataAccess.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\bin\Debug\SOS.BusinessEntities.BusinessEntities.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\obj\Debug\SOS.BusinessLogic.BusinessLogic.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Business Logic\SOS.BusinessLogic\obj\Debug\SOS.BusinessLogic.BusinessLogic.pdb

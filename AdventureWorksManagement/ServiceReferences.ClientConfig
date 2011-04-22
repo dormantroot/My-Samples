@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="DefaultEndpoint" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc"
+                binding="basicHttpBinding" bindingConfiguration="DefaultEndpoint"
+                contract="AdvWorksManagementService.EmployeeServiceContract"
+                name="DefaultEndpoint" />
+        </client>
+    </system.serviceModel>
+</configuration>

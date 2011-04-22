@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<MyTestingGroundMVC.ViewData.EmployeeViewData>" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="MyTestingGroundMVC.Helpers"%>
-<%@ Import Namespace="MyTestingGround.DomainObjects" %>
+<%@ Import Namespace="MyTestingGroundMVC.AdvWorksManagementService" %>
+
 
  
 
@@ -11,16 +12,12 @@
 
 <ul>
 <%
-     foreach (IEmployee e in Model.Employees)
+     foreach (Employee e in Model.Employees)
     {%>
         
         <li><%=
                 ((Employee)e).Title.ToString()
-            %>
-             - 
-            <%=
-                ((Employee)e).BirthDate.ToString() 
-            %>
+            %>         
         </li>
     <%}    
 %> 

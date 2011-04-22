@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="AdventureWorksManagement.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vw="clr-namespace:AdventureWorksManagement.ModelView"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <UserControl.Resources>
+        <vw:EmployeeViewModel x:Key="EmployeeViewModelDS"></vw:EmployeeViewModel>
+        
+        <DataTemplate x:Key="CustomerTemplate">
+            <StackPanel Orientation="Horizontal">              
+                <TextBlock Text="{Binding FirstName}" />
+                <TextBlock Text=" " />
+                <TextBlock Text="{Binding LastName}" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>   
+
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource EmployeeViewModelDS}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="270*" />
+            <RowDefinition Height="30*" />
+        </Grid.RowDefinitions>
+        <ListBox x:Name="CustomersListBox"
+                 Margin="10,10,10,11"
+                 ItemsSource="{Binding Employees}"
+                 ItemTemplate="{StaticResource CustomerTemplate}" />
+        <Button Content="Load Employees" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="284,1,0,0"
+                Name="button1" VerticalAlignment="Top" Width="104"               
+                    Command="{Binding Path=LoadCommand}"/>
+        <TextBlock Height="24" HorizontalAlignment="Left" Text="{Binding Path=Message}" VerticalAlignment="Bottom" Width="216" Grid.Row="1" Margin="12,0,0,6" />
+    </Grid>
+</UserControl>

@@ -4,3 +4,9 @@ C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.Domai
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\MyTestingGround.DomainObjects.dll
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\MyTestingGround.DomainObjects.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\bin\Debug\MyTestingGround.DomainObjects.dll.config
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\bin\Debug\MyTestingGround.DomainObjects.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\bin\Debug\MyTestingGround.DomainObjects.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\MyTestingGround.DomainObjects.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.DomainObjects\obj\Debug\MyTestingGround.DomainObjects.pdb

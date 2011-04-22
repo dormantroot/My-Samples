@@ -1,0 +1,11 @@
+﻿<xapCache source="C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement\Bin\Debug\AdventureWorksManagement.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="4/14/2011 10:31:29 PM">
+  <file source="C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement\obj\Debug\AdventureWorksManagement.dll" archivePath="AdventureWorksManagement.dll" lastWriteTime="4/14/2011 10:31:28 PM" />
+  <file source="C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\Silverlight4\GalaSoft.MvvmLight.Extras.SL4.dll" archivePath="GalaSoft.MvvmLight.Extras.SL4.dll" lastWriteTime="4/18/2010 5:43:36 PM" />
+  <file source="C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\Silverlight4\GalaSoft.MvvmLight.SL4.dll" archivePath="GalaSoft.MvvmLight.SL4.dll" lastWriteTime="4/18/2010 5:43:04 PM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v4.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="5/25/2010 9:59:20 PM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="c:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
+  <file source="C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="4/10/2011 11:54:47 AM" />
+  <file source="C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/14/2011 10:31:29 PM" />
+</xapCache>

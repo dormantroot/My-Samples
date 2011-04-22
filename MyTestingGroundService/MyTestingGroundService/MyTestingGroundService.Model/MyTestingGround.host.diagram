@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hostDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyTestingGround">
+  <hostDesignerModelMoniker Id="7aa78490-e13d-4f87-9d6a-86956c927f4e" />
+  <nestedChildShapes>
+    <hostApplicationShape Id="f2610179-564c-46d0-acc4-f5e12536d439" absoluteBounds="2.125, 1.5, 1.5, 0.375">
+      <hostApplicationMoniker name="/7aa78490-e13d-4f87-9d6a-86956c927f4e/MyTestingGroundHost" />
+    </hostApplicationShape>
+    <serviceDescriptionShape Id="d24c362b-83f3-46eb-bf13-9e2e54d84c7d" absoluteBounds="4.125, 2.375, 1.5, 0.375">
+      <serviceReferenceMoniker name="/7aa78490-e13d-4f87-9d6a-86956c927f4e/MyTestingGroundHost/AdventureWorks" />
+      <relativeChildShapes>
+        <endpointPortShape Id="51ae4820-d15e-4ecf-96dc-a558630d6e19" absoluteBounds="5.0625, 2.625, 0.25, 0.25">
+          <endpointMoniker Id="d260f8db-9f96-45a1-989c-d4669b760aa9" />
+        </endpointPortShape>
+      </relativeChildShapes>
+    </serviceDescriptionShape>
+    <serviceConnector edgePoints="[(2.875 : 1.875); (2.875 : 2.5625); (4.125 : 2.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="fcb7dde6-61aa-4b26-832a-bd9c8244de30">
+      <nodes>
+        <hostApplicationShapeMoniker Id="f2610179-564c-46d0-acc4-f5e12536d439" />
+        <serviceDescriptionShapeMoniker Id="d24c362b-83f3-46eb-bf13-9e2e54d84c7d" />
+      </nodes>
+    </serviceConnector>
+  </nestedChildShapes>
+</hostDesignerDiagram>
