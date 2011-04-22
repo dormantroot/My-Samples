@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="SOS">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="cd7675d1-36f0-49df-b280-ef22c24d8560" ProjectPath="\GeneratedCode" ProjectName="SOS.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="5fc3fa5d-d3b5-4cae-bc86-baf0e7c8b10c" ProjectPath="\GeneratedCode" ProjectName="SOS.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="9af6ba10-62db-43bf-aaae-cce6ae50a3fa" ProjectPath="\GeneratedCode" ProjectName="SOS.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="6aebd8c0-61dc-4bc4-8118-fadb1b317268" ProjectPath="\GeneratedCode" ProjectName="SOS.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="1352b1e6-cf89-41fa-8ab6-7478a5a47bf8" ProjectPath="\GeneratedCode" ProjectName="SOS.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="fc049481-c247-4dd5-a716-89796d95e38d" ProjectPath="\GeneratedCode" ProjectName="SOS.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="e4a12552-8926-4589-9b80-7a28bba52e5c" ProjectPath="\GeneratedCode" ProjectName="SOS.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="689e7f38-d115-41ee-8c01-d108108a0a79" ProjectPath="\GeneratedCode" ProjectName="SOS.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="003a6d58-cc44-47a4-849d-0abe7099673d" ProjectPath="\GeneratedCode" ProjectName="SOS.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="84fdecf5-9ff8-4ef7-a96e-fe052631d957" ProjectPath="\GeneratedCode" ProjectName="SOS.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

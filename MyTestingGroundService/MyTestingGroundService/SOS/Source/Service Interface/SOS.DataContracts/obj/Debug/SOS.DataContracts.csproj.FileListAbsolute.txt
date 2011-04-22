@@ -1,0 +1,5 @@
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.DataContracts\bin\Debug\SOS.DataContracts.DataContracts.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.DataContracts\bin\Debug\SOS.DataContracts.DataContracts.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.DataContracts\obj\Debug\SOS.DataContracts.DataContracts.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.DataContracts\obj\Debug\SOS.DataContracts.DataContracts.pdb

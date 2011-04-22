@@ -1,0 +1,5 @@
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\MyTestingGroundService.Model\bin\Debug\MyTestingGroundService.Model.Model.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\MyTestingGroundService.Model\bin\Debug\MyTestingGroundService.Model.Model.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\MyTestingGroundService.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\MyTestingGroundService.Model\obj\Debug\MyTestingGroundService.Model.Model.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\MyTestingGroundService.Model\obj\Debug\MyTestingGroundService.Model.Model.pdb

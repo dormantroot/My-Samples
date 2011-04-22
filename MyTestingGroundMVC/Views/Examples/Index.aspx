@@ -41,7 +41,7 @@
     <div class="panel">
         <p>
          Loads a list of employees from the AdventureWorks database using Entity Framework as the ORM. The data access layer uses Repository Pattern
-         to perform CRUD functions. <%: Html.ActionLink("Employees", "EmployeesGridData", "Examples", new { @Id = "employees" })%>
+         to perform CRUD functions. <%: Html.ActionLink("Employees", "Employees", "Examples", new { @Id = "employees" })%>
         </p>
     </div>  
   

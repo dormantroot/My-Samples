@@ -10,3 +10,9 @@ C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\bi
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\ResolveAssemblyReference.cache
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\MyTestingGroundMVC.dll
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\MyTestingGroundMVC.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\bin\MyTestingGroundMVC.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\bin\MyTestingGroundMVC.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\bin\Trirand.Web.Mvc.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\MyTestingGroundMVC.dll
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundMVC\obj\Debug\MyTestingGroundMVC.pdb
