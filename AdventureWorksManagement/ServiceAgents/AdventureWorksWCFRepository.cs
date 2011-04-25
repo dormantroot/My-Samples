@@ -5,7 +5,6 @@ using AdventureWorksManagement.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using AdventureWorksManagement.ServiceAgents.Proxy_Adapters;
-using AdventureWorksManagement.ModelView;
 
 namespace AdventureWorksManagement.ServiceAgents
 {  
