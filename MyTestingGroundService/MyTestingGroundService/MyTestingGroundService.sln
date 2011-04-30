@@ -53,8 +53,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.ServiceContracts", "SOS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SOS.Host", "SOS\Tests\SOS.Host\", "{003A6D58-CC44-47A4-849D-0ABE7099673D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.Client", "SOS\Tests\SOS.Client\SOS.Client.csproj", "{84FDECF5-9FF8-4EF7-A96E-FE052631D957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Tests", "Functional Tests", "{1C85C1B7-7730-424C-875D-ED1D26AB673A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{9A965E10-FFB5-4307-810D-BAB501D4CFFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{96850CBD-70AA-4211-8425-B97F2A7C6313}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Documentation\Architecture.vsd = ..\..\Documentation\Architecture.vsd
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "localhost", "http://localhost:49696", "{15786C8E-C161-451B-B59B-C705E0D553A6}"
 	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{E4A12552-8926-4589-9B80-7A28BBA52E5C}|SOS.ServiceImplementation.ServiceImplementation.dll;{CD7675D1-36F0-49DF-B280-EF22C24D8560}|SOS.BusinessEntities.BusinessEntities.dll;{5FC3FA5D-D3B5-4CAE-BC86-BAF0E7C8B10C}|SOS.BusinessLogic.BusinessLogic.dll;{9AF6BA10-62DB-43BF-AAAE-CCE6AE50A3FA}|SOS.DataAccess.DataAccess.dll;{6AEBD8C0-61DC-4BC4-8118-FADB1B317268}|SOS.DataContracts.DataContracts.dll;{1352B1E6-CF89-41FA-8AB6-7478A5A47BF8}|SOS.FaultContracts.FaultContracts.dll;{FC049481-C247-4DD5-A716-89796D95E38D}|SOS.MessageContracts.MessageContracts.dll;{689E7F38-D115-41EE-8C01-D108108A0A79}|SOS.ServiceContracts.ServiceContracts.dll;{46B2776F-7D16-4AA5-A390-98F194D8CBF2}|MyTestingGround.BusinessLogic.dll;{FFE19A3D-837A-47BE-B2AC-EA4794D4C6F8}|MyTestingGround.DataAccess.dll;{F66741F2-2CA5-4ED9-AB26-BF11D0F5F2D7}|MyTestingGround.DomainObjects.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/SOS.Host"
@@ -71,20 +83,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SOS.Host", "SOS\Tests\SOS.H
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49696"
-		VWDDynamicPort = "false"
+		SlnRelativePath = "SOS\Tests\SOS.Host\"
 		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.Client", "SOS\Tests\SOS.Client\SOS.Client.csproj", "{84FDECF5-9FF8-4EF7-A96E-FE052631D957}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Tests", "Functional Tests", "{1C85C1B7-7730-424C-875D-ED1D26AB673A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{9A965E10-FFB5-4307-810D-BAB501D4CFFD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{96850CBD-70AA-4211-8425-B97F2A7C6313}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Documentation\Architecture.vsd = ..\..\Documentation\Architecture.vsd
 	EndProjectSection
 EndProject
 Global
@@ -141,14 +141,14 @@ Global
 		{689E7F38-D115-41EE-8C01-D108108A0A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{689E7F38-D115-41EE-8C01-D108108A0A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{689E7F38-D115-41EE-8C01-D108108A0A79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{003A6D58-CC44-47A4-849D-0ABE7099673D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{003A6D58-CC44-47A4-849D-0ABE7099673D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{003A6D58-CC44-47A4-849D-0ABE7099673D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{003A6D58-CC44-47A4-849D-0ABE7099673D}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15786C8E-C161-451B-B59B-C705E0D553A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15786C8E-C161-451B-B59B-C705E0D553A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15786C8E-C161-451B-B59B-C705E0D553A6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{15786C8E-C161-451B-B59B-C705E0D553A6}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,7 +170,7 @@ Global
 		{FC049481-C247-4DD5-A716-89796D95E38D} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
 		{E4A12552-8926-4589-9B80-7A28BBA52E5C} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
 		{689E7F38-D115-41EE-8C01-D108108A0A79} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
-		{003A6D58-CC44-47A4-849D-0ABE7099673D} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
+		{15786C8E-C161-451B-B59B-C705E0D553A6} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{1C85C1B7-7730-424C-875D-ED1D26AB673A} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{9A965E10-FFB5-4307-810D-BAB501D4CFFD} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}

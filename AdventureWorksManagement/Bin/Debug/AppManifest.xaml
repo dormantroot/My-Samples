@@ -3,6 +3,8 @@
     <AssemblyPart x:Name="AdventureWorksManagement" Source="AdventureWorksManagement.dll" />
     <AssemblyPart x:Name="GalaSoft.MvvmLight.Extras.SL4" Source="GalaSoft.MvvmLight.Extras.SL4.dll" />
     <AssemblyPart x:Name="GalaSoft.MvvmLight.SL4" Source="GalaSoft.MvvmLight.SL4.dll" />
+    <AssemblyPart x:Name="Microsoft.Practices.ServiceLocation" Source="Microsoft.Practices.ServiceLocation.dll" />
+    <AssemblyPart x:Name="Microsoft.Practices.Unity.Silverlight" Source="Microsoft.Practices.Unity.Silverlight.dll" />
     <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
     <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />

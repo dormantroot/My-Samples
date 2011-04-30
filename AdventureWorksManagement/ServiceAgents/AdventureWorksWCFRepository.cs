@@ -5,7 +5,7 @@ using AdventureWorksManagement.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using AdventureWorksManagement.ServiceAgents.Proxy_Adapters;
-using AdventureWorksManagement.ModelView;
+using AdventureWorksManagement.ViewModel;
 
 namespace AdventureWorksManagement.ServiceAgents
 {  
@@ -13,7 +13,7 @@ namespace AdventureWorksManagement.ServiceAgents
     /// <summary>
     /// Repository for WCF agents
     /// </summary>
-    public class AdventureWorksWCFRepository<T> : IAdventureWorksRepository<IBaseModel> where T: IProxyObjectAdapter
+    public class AdventureWorksWCFRepository: IAdventureWorksRepository<IBaseModel>
     {
         /// <summary>
         /// WCF service end
@@ -23,12 +23,12 @@ namespace AdventureWorksManagement.ServiceAgents
         /// <summary>
         /// Adapter used to translate WCF proxy objects to domain objects
         /// </summary>
-        private T proxyobjectAdapter;
+        private  IProxyObjectAdapter proxyobjectAdapter;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AdventureWorksWCFRepository"/> class.
         /// </summary>
-        public AdventureWorksWCFRepository(T proxyAdapter)
+        public AdventureWorksWCFRepository(IProxyObjectAdapter proxyAdapter)
         {
             proxyobjectAdapter = proxyAdapter;            
             servicePoint = new AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContractClient();

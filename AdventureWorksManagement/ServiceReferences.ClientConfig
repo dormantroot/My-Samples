@@ -8,7 +8,7 @@
             </basicHttpBinding>
         </bindings>
         <client>
-            <endpoint address="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc"
+            <endpoint address="http://localhost:49696/AdventureWorks.svc"
                 binding="basicHttpBinding" bindingConfiguration="DefaultEndpoint"
                 contract="AdvWorksManagementService.EmployeeServiceContract"
                 name="DefaultEndpoint" />

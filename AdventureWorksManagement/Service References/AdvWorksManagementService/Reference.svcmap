@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0d85119d-40fe-4b2a-b5bf-2c14431e0737" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4bd818f3-45b1-49ef-9f31-64bf27a8ef2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -20,12 +20,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:49696/AdventureWorks.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AdventureWorks.xsd" MetadataType="Schema" ID="b92d3777-30ea-49a0-909f-288cd74c1e94" SourceId="1" SourceUrl="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc?xsd=xsd1" />
-    <MetadataFile FileName="AdventureWorks1.xsd" MetadataType="Schema" ID="d1b60da5-3b46-4819-a30c-f0046ceb923f" SourceId="1" SourceUrl="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc?xsd=xsd0" />
-    <MetadataFile FileName="AdventureWorksService.wsdl" MetadataType="Wsdl" ID="efdfffb5-0ac9-4301-a507-f56ed4c00974" SourceId="1" SourceUrl="http://edayaranmula-pc/MyTestingGroundService/AdventureWorks.svc?wsdl" />
+    <MetadataFile FileName="AdventureWorksService.wsdl" MetadataType="Wsdl" ID="16d008e6-1efa-48b4-8f33-141fbadacf8c" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?wsdl" />
+    <MetadataFile FileName="AdventureWorks.disco" MetadataType="Disco" ID="cb4a1a3b-7ff7-4990-ab0e-76e48a8fa6d6" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?disco" />
+    <MetadataFile FileName="AdventureWorks.xsd" MetadataType="Schema" ID="7e12affa-b202-4ae0-9dc0-d8eafb95d0b0" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdventureWorks1.xsd" MetadataType="Schema" ID="d43d9e96-3493-48ec-b658-8014da0a05ab" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
