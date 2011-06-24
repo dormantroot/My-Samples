@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MyTestingGround.DomainObjects
 {
-    public interface IEmployee
+    public interface IEmployee 
     {
         string Name
         {

@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight;
+using System.Threading;
 
 namespace AdventureWorksManagement.ViewModel
 {
@@ -18,8 +19,9 @@ namespace AdventureWorksManagement.ViewModel
        IAdventureWorksRepository<IBaseModel> serviceAgent;
 
        private String title;
-       private String m_Message;
+       private String message;
        private ObservableCollection<IBaseModel> employees;
+       private bool isBusy;
      
        #endregion ------------------- PRIVATE PROPERTIES ----------------------
 
@@ -71,11 +73,11 @@ namespace AdventureWorksManagement.ViewModel
        {
            get
            {
-               return m_Message;
+               return message;
            }
            set
            {
-               m_Message = value;
+               message = value;
                RaisePropertyChanged("Message");
            }
        }
@@ -84,6 +86,47 @@ namespace AdventureWorksManagement.ViewModel
        /// Gets the load command.
        /// </summary>
        public ICommand LoadCommand { get; private set; }
+
+
+
+       /// <summary>
+       /// Gets or sets a value indicating whether this ViewModel is busy.
+       /// </summary>
+       /// <value>
+       ///   <c>true</c> if this ViewModel is busy; otherwise, <c>false</c>.
+       /// </value>      
+       public bool IsBusy
+       {
+           get
+           {
+               return isBusy;
+           }
+
+           set
+           {
+               isBusy = value;
+               AllowInteraction = value;
+               RaisePropertyChanged("IsBusy");
+              
+           }
+       }
+
+       /// <summary>
+       /// Gets a value indicating whether any of the controls tied to this ViewModel
+       /// is allowed to interact.
+       /// </summary>
+       /// <value>
+       ///   <c>true</c> if interaction allowed; otherwise, <c>false</c>.
+       /// </value>
+       public bool AllowInteraction
+       {
+           get {return !isBusy;}
+           set
+           {
+               bool dummy = value;
+               RaisePropertyChanged("AllowInteraction");
+           }
+       }
 
        #endregion ------------------- PUBLIC PROPERTIES ----------------------
 
@@ -108,7 +151,9 @@ namespace AdventureWorksManagement.ViewModel
        /// </summary>
        private void InitializeCommands()
        {
-           LoadCommand = new RelayCommand(Load);         
+           LoadCommand = new RelayCommand(Load);
+           IsBusy = false;
+           Message = String.Empty;
        }
 
        /// <summary>
@@ -118,32 +163,30 @@ namespace AdventureWorksManagement.ViewModel
        {
            try
            {
-               ShowMessage("Loading...");
+               if (IsBusy)
+               {
+                   return;
+               }
 
-            
+               IsBusy = true;
+               Message = "Loading...";
+
+              
                // get customers
                serviceAgent.GetEmployees((p) =>
-               {
+               {                   
                   Employees = new ObservableCollection<IBaseModel>(p);
-                  ShowMessage(String.Empty);
+                  Message = String.Empty;
+                  IsBusy = false;
                });
                
            }
            catch (Exception ex)
            {
-               ShowMessage(ex.Message);
+               Message = ex.Message;
            }
        }
-
-
-       /// <summary>
-       /// Shows the message.
-       /// </summary>
-       /// <param name="message">The message.</param>
-       private void ShowMessage(string message)
-       {
-           Message = message;          
-       }
+      
        #endregion--------------------- PRIVATE METHODS ------------------------
 
        #region ----------------------- PUBLIC METHODS ------------------------

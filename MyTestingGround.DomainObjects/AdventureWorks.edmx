@@ -5655,7 +5655,7 @@
     </Options>
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
-      <Diagram Name="AdventureWorks">
+      <Diagram Name="AdventureWorks" ZoomLevel="110">
         <EntityTypeShape EntityType="MyTestingGround.DomainObjects.AWBuildVersion" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5923063151041665" IsExpanded="true" />
         <EntityTypeShape EntityType="MyTestingGround.DomainObjects.DatabaseLog" Width="1.5" PointX="2.75" PointY="0.75" Height="2.2496956380208335" IsExpanded="true" />
         <EntityTypeShape EntityType="MyTestingGround.DomainObjects.ErrorLog" Width="1.5" PointX="0.75" PointY="3.75" Height="2.4140429687499996" IsExpanded="true" />

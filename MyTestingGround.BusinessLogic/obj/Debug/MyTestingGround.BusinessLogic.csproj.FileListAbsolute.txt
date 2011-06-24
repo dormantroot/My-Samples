@@ -7,12 +7,30 @@ C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.Busin
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.dll
 C:\My Space\Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.pdb
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.dll
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.pdb
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.dll
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.dll
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.pdb
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.pdb
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.dll
+G:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.pdb
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.dll
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.pdb
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.dll
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.dll
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.pdb
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.pdb
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.dll
+C:\My Space\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.pdb
+C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.BusinessLogic.pdb
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DataAccess.pdb
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\bin\Debug\MyTestingGround.DomainObjects.pdb
-C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGround.BusinessLogic\obj\Debug\MyTestingGround.BusinessLogic.pdb

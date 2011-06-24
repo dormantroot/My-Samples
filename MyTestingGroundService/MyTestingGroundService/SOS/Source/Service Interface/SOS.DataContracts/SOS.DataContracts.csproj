@@ -45,6 +45,13 @@
   <ItemGroup>
     <Compile Include="GeneratedCode\Employee.cs" />
     <Compile Include="GeneratedCode\Employees.cs" />
+    <Compile Include="GeneratedCode\Product.cs" />
+    <Compile Include="GeneratedCode\ProductCostHistories.cs" />
+    <Compile Include="GeneratedCode\ProductCostHistory.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrder.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrderDetail.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrderDetails.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

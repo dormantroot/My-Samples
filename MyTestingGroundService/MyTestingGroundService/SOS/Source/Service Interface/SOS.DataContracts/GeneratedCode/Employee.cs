@@ -21,6 +21,7 @@ namespace SOS.DataContracts
 		private int id;
 		private string title;
 		private string gender;
+		private System.Collections.Generic.List<PurchaseOrder> purchaseOrders;
 		
 		[WcfSerialization::DataMember(Name = "Id", IsRequired = false, Order = 0)]
 		public int Id
@@ -41,6 +42,13 @@ namespace SOS.DataContracts
 		{
 		  get { return gender; }
 		  set { gender = value; }
+		}				
+		
+		[WcfSerialization::DataMember(Name = "PurchaseOrders", IsRequired = false, Order = 3)]
+		public System.Collections.Generic.List<PurchaseOrder> PurchaseOrders
+		{
+		  get { return purchaseOrders; }
+		  set { purchaseOrders = value; }
 		}				
 	}
 }

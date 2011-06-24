@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using MyTestingGround.DataAccess.Repository;
 using MyTestingGround.DomainObjects;
+
 
 namespace MyTestingGround.BusinessLogic.Controllers
 {
@@ -13,7 +11,8 @@ namespace MyTestingGround.BusinessLogic.Controllers
     public class EmployeeController
     {
         #region ---------------------- PRIVATE PROPERTIES ----------------------
-        private readonly EmployeeRepository _employeeRepository;
+        private readonly IEmployeeRepository employeeRepository;
+        private readonly IPurchaseOrderRepository purchaseOrderHeaderRepository;
         #endregion ------------------- PRIVATE PROPERTIES ----------------------
 
         #region ---------------------- PUBLIC PROPERTIES ----------------------
@@ -26,7 +25,8 @@ namespace MyTestingGround.BusinessLogic.Controllers
         /// </summary>
         public EmployeeController()
         {
-            _employeeRepository = new EmployeeRepository();
+            employeeRepository = new EmployeeRepositoryEF();
+            purchaseOrderHeaderRepository = new PurchaseOrderRepositoryEF();
         }
         #endregion --------------------- CONSTRUCTORS -------------------------
 
@@ -39,15 +39,26 @@ namespace MyTestingGround.BusinessLogic.Controllers
         /// Return all employees in a collection.
         /// </summary>
         /// <returns></returns>
-        public ICollection<IEmployee> Employees()
+        public IEnumerable<IEmployee> Employees()
         {
-            return _employeeRepository.FindAll();
-        }
+            return employeeRepository.FindAll();
+        }      
 
+
+        public IEnumerable<IPurchaseOrderHeader> RetrieveEmployeePurchaseOrders(IEmployee givenEmployee)
+        {
+            
+            IEnumerable<IPurchaseOrderHeader> orders = purchaseOrderHeaderRepository.FindWhere((p) =>
+            {
+                return (p as PurchaseOrderHeader).EmployeeID == (givenEmployee as Employee).EmployeeID ? true : false;
+            });
+
+            return orders;
+        }
 
         public void AddEmployee(IEmployee entity)
         {
-            _employeeRepository.Add(entity);
+            employeeRepository.Add(entity);
         }
         #endregion--------------------- PUBLIC METHODS ------------------------
     }

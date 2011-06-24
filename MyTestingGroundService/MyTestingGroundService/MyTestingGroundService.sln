@@ -7,8 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestingGroundService.Mode
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBA91396-7B19-4647-BA3D-A5AC5AA7875F}"
 	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MyTestingGroundService.vsmdi = MyTestingGroundService.vsmdi
 		ProjectMapping.xml = ProjectMapping.xml
 		ProjectMapping.xsd = ProjectMapping.xsd
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyTestingGroundService.DataAccess", "MyTestingGroundService.DataAccess", "{3F1BECC4-6623-498A-AFB8-65487CF9DDDD}"
@@ -23,7 +26,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestingGround.DataAccess"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestingGround.BusinessLogic", "..\..\MyTestingGround.BusinessLogic\MyTestingGround.BusinessLogic.csproj", "{46B2776F-7D16-4AA5-A390-98F194D8CBF2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyTestingGroundService.Tests", "MyTestingGroundService.Tests", "{C5138F44-EB46-4F3E-94F5-49E10A2AC40B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C5138F44-EB46-4F3E-94F5-49E10A2AC40B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOS", "SOS", "{66D4E529-D7DD-4476-A64F-E38257B06D01}"
 EndProject
@@ -54,6 +57,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOS.Client", "SOS\Tests\SOS.Client\SOS.Client.csproj", "{84FDECF5-9FF8-4EF7-A96E-FE052631D957}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15786C8E-C161-451B-B59B-C705E0D553A6} = {15786C8E-C161-451B-B59B-C705E0D553A6}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Tests", "Functional Tests", "{1C85C1B7-7730-424C-875D-ED1D26AB673A}"
 EndProject
@@ -62,6 +68,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{96850CBD-70AA-4211-8425-B97F2A7C6313}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\Documentation\Architecture.vsd = ..\..\Documentation\Architecture.vsd
+		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "localhost", "http://localhost:49696", "{15786C8E-C161-451B-B59B-C705E0D553A6}"
@@ -87,7 +94,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "localhost", "http://localho
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestingGroundService.UnitTest", "ServiceTests\MyTestingGroundService.UnitTest.csproj", "{5B0B83AC-5211-4189-841E-F609C94EF886}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MyTestingGroundService.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -149,6 +161,10 @@ Global
 		{15786C8E-C161-451B-B59B-C705E0D553A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15786C8E-C161-451B-B59B-C705E0D553A6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{15786C8E-C161-451B-B59B-C705E0D553A6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5B0B83AC-5211-4189-841E-F609C94EF886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0B83AC-5211-4189-841E-F609C94EF886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0B83AC-5211-4189-841E-F609C94EF886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0B83AC-5211-4189-841E-F609C94EF886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,6 +173,7 @@ Global
 		{FFE19A3D-837A-47BE-B2AC-EA4794D4C6F8} = {3F1BECC4-6623-498A-AFB8-65487CF9DDDD}
 		{46B2776F-7D16-4AA5-A390-98F194D8CBF2} = {44AFBE54-7EB8-43A6-AB49-0456D7415F2F}
 		{F66741F2-2CA5-4ED9-AB26-BF11D0F5F2D7} = {ED3B6B45-816F-4DDD-9E4F-77642FE0B528}
+		{5B0B83AC-5211-4189-841E-F609C94EF886} = {C5138F44-EB46-4F3E-94F5-49E10A2AC40B}
 		{A787B244-0FDA-4791-A3F1-AD9228164FE5} = {66D4E529-D7DD-4476-A64F-E38257B06D01}
 		{F5A152D6-D080-4F7A-AED1-D345B6CF0CAE} = {66D4E529-D7DD-4476-A64F-E38257B06D01}
 		{75A683F0-9491-4793-A5E4-793AB10B5BB5} = {A787B244-0FDA-4791-A3F1-AD9228164FE5}
@@ -170,9 +187,9 @@ Global
 		{FC049481-C247-4DD5-A716-89796D95E38D} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
 		{E4A12552-8926-4589-9B80-7A28BBA52E5C} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
 		{689E7F38-D115-41EE-8C01-D108108A0A79} = {D6631C67-0876-4A51-83DC-5E5EDC9C5212}
-		{15786C8E-C161-451B-B59B-C705E0D553A6} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{84FDECF5-9FF8-4EF7-A96E-FE052631D957} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{1C85C1B7-7730-424C-875D-ED1D26AB673A} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 		{9A965E10-FFB5-4307-810D-BAB501D4CFFD} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
+		{15786C8E-C161-451B-B59B-C705E0D553A6} = {F5A152D6-D080-4F7A-AED1-D345B6CF0CAE}
 	EndGlobalSection
 EndGlobal

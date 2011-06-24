@@ -22,6 +22,9 @@ namespace SOS.ServiceContracts
 		[WCF::OperationContract(IsTerminating = false, IsInitiating = true, IsOneWay = false, AsyncPattern = false, Action = "GetEmployees", ProtectionLevel = ProtectionLevel.None)]
 		SOS.MessageContracts.EmployeeResponse GetEmployees();
 		
+[WCF::OperationContract(IsTerminating = false, IsInitiating = true, IsOneWay = false, AsyncPattern = false, Action = "GetPurchaseOrderDetails", ProtectionLevel = ProtectionLevel.None)]
+		SOS.MessageContracts.PurchaseOrderDetailsResponse GetPurchaseOrderDetails(SOS.MessageContracts.PurchaseOrderDetailsRequest request);
+		
 	}
 }
 

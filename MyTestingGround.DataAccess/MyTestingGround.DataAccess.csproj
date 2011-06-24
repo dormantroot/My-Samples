@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\EmployeeRepository.cs" />
+    <Compile Include="Repository\EmployeeRepositoryEF.cs" />
     <Compile Include="Repository\IEmployeeRepository.cs" />
+    <Compile Include="Repository\IProductRepository.cs" />
+    <Compile Include="Repository\IPurchaseOrderRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\ProductRepositoryEF.cs" />
+    <Compile Include="Repository\PurchaseOrderRepositoryEF.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyTestingGround.DomainObjects\MyTestingGround.DomainObjects.csproj">

@@ -49,6 +49,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service References\AdvWorksManagementService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <None Include="app.config" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,9 +71,41 @@
     <Compile Include="ResultsGrid.designer.cs">
       <DependentUpon>ResultsGrid.cs</DependentUpon>
     </Compile>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorksService.wsdl" />
+    <None Include="Service References\AdvWorksManagementService\SOS.Client.AdvWorksManagementService.Employees.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdvWorksManagementService\SOS.Client.AdvWorksManagementService.PurchaseOrderDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Service References\" />
+    <WCFMetadataStorage Include="Service References\AdvWorksManagementService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AdvWorksManagementService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AdvWorksManagementService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AdvWorksManagementService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

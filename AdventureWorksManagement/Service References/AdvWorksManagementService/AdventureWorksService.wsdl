@@ -10,10 +10,20 @@
   <wsdl:message name="EmployeeResponse">
     <wsdl:part name="Employees" element="tns:Employees" />
   </wsdl:message>
+  <wsdl:message name="PurchaseOrderDetailsRequest">
+    <wsdl:part name="PurchaseOrderID" element="tns:PurchaseOrderID" />
+  </wsdl:message>
+  <wsdl:message name="PurchaseOrderDetailsResponse">
+    <wsdl:part name="PurchaseOrderDetails" element="tns:PurchaseOrderDetails" />
+  </wsdl:message>
   <wsdl:portType name="EmployeeServiceContract">
     <wsdl:operation name="GetEmployees">
       <wsdl:input wsaw:Action="GetEmployees" message="tns:EmployeeServiceContract_GetEmployees_InputMessage" />
       <wsdl:output wsaw:Action="http://MyTestingGroundService.Model/2011/MyTestingGroundService/EmployeeServiceContract/GetEmployeesResponse" name="EmployeeResponse" message="tns:EmployeeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrderDetails">
+      <wsdl:input wsaw:Action="GetPurchaseOrderDetails" name="PurchaseOrderDetailsRequest" message="tns:PurchaseOrderDetailsRequest" />
+      <wsdl:output wsaw:Action="http://MyTestingGroundService.Model/2011/MyTestingGroundService/EmployeeServiceContract/GetPurchaseOrderDetailsResponse" name="PurchaseOrderDetailsResponse" message="tns:PurchaseOrderDetailsResponse" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="DefaultEndpoint" type="tns:EmployeeServiceContract">
@@ -24,6 +34,15 @@
         <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output name="EmployeeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPurchaseOrderDetails">
+      <soap:operation soapAction="GetPurchaseOrderDetails" style="document" />
+      <wsdl:input name="PurchaseOrderDetailsRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PurchaseOrderDetailsResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>

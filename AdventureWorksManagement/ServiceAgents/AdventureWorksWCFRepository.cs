@@ -39,25 +39,34 @@ namespace AdventureWorksManagement.ServiceAgents
         /// </summary>
         /// <param name="handleEmployees">The handle employees.</param>
         public void GetEmployees(Action<IEnumerable<IBaseModel>> handleEmployees)
-        {           
-            Collection<IBaseModel> employees;
+        {
+            try
+            {
+                Collection<IBaseModel> employees;
 
-            servicePoint.GetEmployeesCompleted += (s, e) =>
+                servicePoint.GetEmployeesCompleted += (s, e) =>
                 {
-                    employees = new Collection<IBaseModel>();                 
+                    employees = new Collection<IBaseModel>();
 
                     foreach (Employee item in e.Result)
                     {
-                        proxyobjectAdapter.Adapt(item,(em) =>
-                            {
-                                employees.Add(em);
-                            });
+                        proxyobjectAdapter.Adapt(item, (em) =>
+                        {
+                            employees.Add(em);
+                        });
                     }
-                    
+
                     handleEmployees(employees);
                 };
 
-            servicePoint.GetEmployeesAsync();
+                servicePoint.GetEmployeesAsync();              
+            }
+            catch (Exception ex)
+            {
+                
+                
+            }
+          
         }     
     }
 }

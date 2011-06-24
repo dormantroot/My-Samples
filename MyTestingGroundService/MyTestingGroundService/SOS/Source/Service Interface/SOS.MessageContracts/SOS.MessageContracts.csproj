@@ -45,6 +45,8 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="GeneratedCode\EmployeeResponse.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrderDetailsRequest.cs" />
+    <Compile Include="GeneratedCode\PurchaseOrderDetailsResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

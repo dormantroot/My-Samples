@@ -6,6 +6,7 @@ namespace AdventureWorksManagement.ViewModel
     /// </summary>
     public interface IViewModel 
     {
-        ICommand LoadCommand { get; }  
+        ICommand LoadCommand { get; }
+        bool IsBusy { set; get; }
     }
 }

@@ -32,6 +32,8 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
         
         private string GenderField;
         
+        private System.Collections.ObjectModel.ObservableCollection<AdventureWorksManagement.AdvWorksManagementService.PurchaseOrder> PurchaseOrdersField;
+        
         [System.Runtime.Serialization.DataMemberAttribute()]
         public int Id {
             get {
@@ -71,6 +73,220 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public System.Collections.ObjectModel.ObservableCollection<AdventureWorksManagement.AdvWorksManagementService.PurchaseOrder> PurchaseOrders {
+            get {
+                return this.PurchaseOrdersField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PurchaseOrdersField, value) != true)) {
+                    this.PurchaseOrdersField = value;
+                    this.RaisePropertyChanged("PurchaseOrders");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PurchaseOrder", Namespace="http://MyTestingGroundService.Model/2011/MyTestingGroundService")]
+    public partial class PurchaseOrder : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int PurchaseOrderIDField;
+        
+        private System.DateTime OrderDateField;
+        
+        private System.DateTime ShipDateField;
+        
+        private decimal TaxAmtField;
+        
+        private decimal SubTotalField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int PurchaseOrderID {
+            get {
+                return this.PurchaseOrderIDField;
+            }
+            set {
+                if ((this.PurchaseOrderIDField.Equals(value) != true)) {
+                    this.PurchaseOrderIDField = value;
+                    this.RaisePropertyChanged("PurchaseOrderID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
+        public System.DateTime OrderDate {
+            get {
+                return this.OrderDateField;
+            }
+            set {
+                if ((this.OrderDateField.Equals(value) != true)) {
+                    this.OrderDateField = value;
+                    this.RaisePropertyChanged("OrderDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public System.DateTime ShipDate {
+            get {
+                return this.ShipDateField;
+            }
+            set {
+                if ((this.ShipDateField.Equals(value) != true)) {
+                    this.ShipDateField = value;
+                    this.RaisePropertyChanged("ShipDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public decimal TaxAmt {
+            get {
+                return this.TaxAmtField;
+            }
+            set {
+                if ((this.TaxAmtField.Equals(value) != true)) {
+                    this.TaxAmtField = value;
+                    this.RaisePropertyChanged("TaxAmt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public decimal SubTotal {
+            get {
+                return this.SubTotalField;
+            }
+            set {
+                if ((this.SubTotalField.Equals(value) != true)) {
+                    this.SubTotalField = value;
+                    this.RaisePropertyChanged("SubTotal");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="PurchaseOrderDetails", Namespace="http://MyTestingGroundService.Model/2011/MyTestingGroundService", ItemName="PurchaseOrderDetail")]
+    public class PurchaseOrderDetails : System.Collections.ObjectModel.ObservableCollection<AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetail> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PurchaseOrderDetail", Namespace="http://MyTestingGroundService.Model/2011/MyTestingGroundService")]
+    public partial class PurchaseOrderDetail : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime DueDateField;
+        
+        private int OrderQtyField;
+        
+        private decimal UnitPriceField;
+        
+        private decimal LineTotalField;
+        
+        private decimal ReceivedQtyField;
+        
+        private int ProductIDField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime DueDate {
+            get {
+                return this.DueDateField;
+            }
+            set {
+                if ((this.DueDateField.Equals(value) != true)) {
+                    this.DueDateField = value;
+                    this.RaisePropertyChanged("DueDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int OrderQty {
+            get {
+                return this.OrderQtyField;
+            }
+            set {
+                if ((this.OrderQtyField.Equals(value) != true)) {
+                    this.OrderQtyField = value;
+                    this.RaisePropertyChanged("OrderQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal UnitPrice {
+            get {
+                return this.UnitPriceField;
+            }
+            set {
+                if ((this.UnitPriceField.Equals(value) != true)) {
+                    this.UnitPriceField = value;
+                    this.RaisePropertyChanged("UnitPrice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public decimal LineTotal {
+            get {
+                return this.LineTotalField;
+            }
+            set {
+                if ((this.LineTotalField.Equals(value) != true)) {
+                    this.LineTotalField = value;
+                    this.RaisePropertyChanged("LineTotal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public decimal ReceivedQty {
+            get {
+                return this.ReceivedQtyField;
+            }
+            set {
+                if ((this.ReceivedQtyField.Equals(value) != true)) {
+                    this.ReceivedQtyField = value;
+                    this.RaisePropertyChanged("ReceivedQty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public int ProductID {
+            get {
+                return this.ProductIDField;
+            }
+            set {
+                if ((this.ProductIDField.Equals(value) != true)) {
+                    this.ProductIDField = value;
+                    this.RaisePropertyChanged("ProductID");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -90,6 +306,12 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
         System.IAsyncResult BeginGetEmployees(AdventureWorksManagement.AdvWorksManagementService.GetEmployeesRequest request, System.AsyncCallback callback, object asyncState);
         
         AdventureWorksManagement.AdvWorksManagementService.EmployeeResponse EndGetEmployees(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="GetPurchaseOrderDetails", ReplyAction="http://MyTestingGroundService.Model/2011/MyTestingGroundService/EmployeeServiceCo" +
+            "ntract/GetPurchaseOrderDetailsResponse")]
+        System.IAsyncResult BeginGetPurchaseOrderDetails(AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsRequest request, System.AsyncCallback callback, object asyncState);
+        
+        AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse EndGetPurchaseOrderDetails(System.IAsyncResult result);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -119,6 +341,40 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class PurchaseOrderDetailsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://MyTestingGroundService.Model/2011/MyTestingGroundService", Order=0)]
+        public int PurchaseOrderID;
+        
+        public PurchaseOrderDetailsRequest() {
+        }
+        
+        public PurchaseOrderDetailsRequest(int PurchaseOrderID) {
+            this.PurchaseOrderID = PurchaseOrderID;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class PurchaseOrderDetailsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://MyTestingGroundService.Model/2011/MyTestingGroundService", Order=0)]
+        public AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails PurchaseOrderDetails;
+        
+        public PurchaseOrderDetailsResponse() {
+        }
+        
+        public PurchaseOrderDetailsResponse(AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails PurchaseOrderDetails) {
+            this.PurchaseOrderDetails = PurchaseOrderDetails;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface EmployeeServiceContractChannel : AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract, System.ServiceModel.IClientChannel {
     }
@@ -144,6 +400,25 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetPurchaseOrderDetailsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetPurchaseOrderDetailsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class EmployeeServiceContractClient : System.ServiceModel.ClientBase<AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract>, AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract {
         
         private BeginOperationDelegate onBeginGetEmployeesDelegate;
@@ -151,6 +426,12 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
         private EndOperationDelegate onEndGetEmployeesDelegate;
         
         private System.Threading.SendOrPostCallback onGetEmployeesCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetPurchaseOrderDetailsDelegate;
+        
+        private EndOperationDelegate onEndGetPurchaseOrderDetailsDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetPurchaseOrderDetailsCompletedDelegate;
         
         private BeginOperationDelegate onBeginOpenDelegate;
         
@@ -206,6 +487,8 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
         }
         
         public event System.EventHandler<GetEmployeesCompletedEventArgs> GetEmployeesCompleted;
+        
+        public event System.EventHandler<GetPurchaseOrderDetailsCompletedEventArgs> GetPurchaseOrderDetailsCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -265,6 +548,65 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
                 this.onGetEmployeesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetEmployeesCompleted);
             }
             base.InvokeAsync(this.onBeginGetEmployeesDelegate, null, this.onEndGetEmployeesDelegate, this.onGetEmployeesCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract.BeginGetPurchaseOrderDetails(AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsRequest request, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetPurchaseOrderDetails(request, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        private System.IAsyncResult BeginGetPurchaseOrderDetails(int PurchaseOrderID, System.AsyncCallback callback, object asyncState) {
+            AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsRequest inValue = new AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsRequest();
+            inValue.PurchaseOrderID = PurchaseOrderID;
+            return ((AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract)(this)).BeginGetPurchaseOrderDetails(inValue, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract.EndGetPurchaseOrderDetails(System.IAsyncResult result) {
+            return base.Channel.EndGetPurchaseOrderDetails(result);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        private AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails EndGetPurchaseOrderDetails(System.IAsyncResult result) {
+            AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse retVal = ((AdventureWorksManagement.AdvWorksManagementService.EmployeeServiceContract)(this)).EndGetPurchaseOrderDetails(result);
+            return retVal.PurchaseOrderDetails;
+        }
+        
+        private System.IAsyncResult OnBeginGetPurchaseOrderDetails(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int PurchaseOrderID = ((int)(inValues[0]));
+            return this.BeginGetPurchaseOrderDetails(PurchaseOrderID, callback, asyncState);
+        }
+        
+        private object[] OnEndGetPurchaseOrderDetails(System.IAsyncResult result) {
+            AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetails retVal = this.EndGetPurchaseOrderDetails(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetPurchaseOrderDetailsCompleted(object state) {
+            if ((this.GetPurchaseOrderDetailsCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetPurchaseOrderDetailsCompleted(this, new GetPurchaseOrderDetailsCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetPurchaseOrderDetailsAsync(int PurchaseOrderID) {
+            this.GetPurchaseOrderDetailsAsync(PurchaseOrderID, null);
+        }
+        
+        public void GetPurchaseOrderDetailsAsync(int PurchaseOrderID, object userState) {
+            if ((this.onBeginGetPurchaseOrderDetailsDelegate == null)) {
+                this.onBeginGetPurchaseOrderDetailsDelegate = new BeginOperationDelegate(this.OnBeginGetPurchaseOrderDetails);
+            }
+            if ((this.onEndGetPurchaseOrderDetailsDelegate == null)) {
+                this.onEndGetPurchaseOrderDetailsDelegate = new EndOperationDelegate(this.OnEndGetPurchaseOrderDetails);
+            }
+            if ((this.onGetPurchaseOrderDetailsCompletedDelegate == null)) {
+                this.onGetPurchaseOrderDetailsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPurchaseOrderDetailsCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetPurchaseOrderDetailsDelegate, new object[] {
+                        PurchaseOrderID}, this.onEndGetPurchaseOrderDetailsDelegate, this.onGetPurchaseOrderDetailsCompletedDelegate, userState);
         }
         
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
@@ -353,6 +695,19 @@ namespace AdventureWorksManagement.AdvWorksManagementService {
             public AdventureWorksManagement.AdvWorksManagementService.EmployeeResponse EndGetEmployees(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 AdventureWorksManagement.AdvWorksManagementService.EmployeeResponse _result = ((AdventureWorksManagement.AdvWorksManagementService.EmployeeResponse)(base.EndInvoke("GetEmployees", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetPurchaseOrderDetails(AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsRequest request, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = request;
+                System.IAsyncResult _result = base.BeginInvoke("GetPurchaseOrderDetails", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse EndGetPurchaseOrderDetails(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse _result = ((AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse)(base.EndInvoke("GetPurchaseOrderDetails", _args, result)));
                 return _result;
             }
         }

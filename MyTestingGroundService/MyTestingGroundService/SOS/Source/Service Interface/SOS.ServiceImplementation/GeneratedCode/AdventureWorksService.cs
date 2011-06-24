@@ -28,6 +28,11 @@ namespace SOS.ServiceImplementation
 			return null;
 		}
 
+		public virtual SOS.MessageContracts.PurchaseOrderDetailsResponse GetPurchaseOrderDetails(SOS.MessageContracts.PurchaseOrderDetailsRequest request)
+		{
+			return null;
+		}
+
 		#endregion		
 		
 	}
