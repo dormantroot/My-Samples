@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9851a60b-5730-4605-a5a9-623e3b135f78" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49696/AdventureWorks.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdventureWorksService.wsdl" MetadataType="Wsdl" ID="eaa66c93-3034-4b6a-855f-3daf29cc235f" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?wsdl" />
+    <MetadataFile FileName="AdventureWorks.disco" MetadataType="Disco" ID="fd7dd018-9b62-4f82-8d1d-39390a172180" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?disco" />
+    <MetadataFile FileName="AdventureWorks.xsd" MetadataType="Schema" ID="fa2f3138-fd0c-43e5-b03b-5afc8e6b0d20" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdventureWorks1.xsd" MetadataType="Schema" ID="46db0c79-c491-446c-b4d9-f613e114d73d" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

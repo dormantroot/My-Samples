@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="AdventureWorksManagement.UI.EmployeeMasterDetailsWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="382" d:DesignWidth="582"
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+             >
+
+    <UserControl.DataContext>
+        <Binding Mode="OneWay" Path="Employee" Source="{StaticResource VMLocator}"/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+
+        <DataTemplate x:Key="EmployeeTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Title}" />
+                <TextBlock Text=" - " />
+                <TextBlock Text="{Binding ID}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ProductTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Gender}" />               
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+   
+    <Grid x:Name="LayoutRoot" Background="White" Width="582">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="270*" />
+            <RowDefinition Height="30*" />
+        </Grid.RowDefinitions>
+        <sdk:DataGrid HorizontalAlignment="Left" Name="dataGrid1" VerticalAlignment="Top" Width="558" ItemsSource="{Binding Employees}"
+                      AutoGenerateColumns="False" Margin="12,25,0,0" Height="307">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTemplateColumn CellTemplate="{StaticResource EmployeeTemplate}" Header="Title">
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTemplateColumn CellTemplate="{StaticResource ProductTemplate}" Header="Product Order Count">
+                </sdk:DataGridTemplateColumn>
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <Button Content="Load Employees" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="285,8,0,0"
+                Name="button1" VerticalAlignment="Top" Width="104"               
+                    Command="{Binding Path=LoadCommand}"  IsEnabled="{Binding Path=AllowInteraction}"/>
+        <TextBlock Height="24" HorizontalAlignment="Left" Text="{Binding Path=Message}" VerticalAlignment="Bottom" Width="216" Grid.Row="1" Margin="12,0,0,6" />
+        
+        <toolkit:BusyIndicator Height="64" HorizontalAlignment="Center" Margin="117,98,0,0" Name="busyIndicator1" VerticalAlignment="Center" Width="294" IsBusy="{Binding Path=IsBusy}" VerticalContentAlignment="Center">
+        </toolkit:BusyIndicator>
+        <TextBlock Height="27" HorizontalAlignment="Left" Margin="12,0,0,0" Name="textBlock1" Text="Employees" VerticalAlignment="Top" Width="247" TextAlignment="Left" FontWeight="Bold" FontSize="18" />
+       
+    </Grid>    
+</UserControl>
