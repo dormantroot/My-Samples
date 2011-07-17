@@ -75,7 +75,8 @@ namespace ServiceTests
         public void FindAllEmployees()
         {
             IEmployeeRepository target = new EmployeeRepositoryEF(); // TODO: Initialize to an appropriate value
-            Assert.IsNotNull(target.FindAll().ToList<IEmployee>(), "Should find atleast one employee from the list.");           
+            IList<IEmployee> k = target.FindAll().ToList<IEmployee>();
+            Assert.IsNotNull(k, "Should find atleast one employee from the list.");           
         }     
     }
 }

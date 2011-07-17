@@ -16,10 +16,10 @@ namespace AdventureWorksManagement.Model
     /// Employee model
     /// </summary>
     public class EmployeeModel : IBaseModel
-    {       
-
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+    {
+       public string Title { get; set; }
+       public string ID { get; set; }
+       public string Gender { get; set; }
     }
    
 }

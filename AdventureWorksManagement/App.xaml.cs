@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows;
-
 using AdventureWorksManagement.ViewModel;
+using AdventureWorksManagement.UI;
+
 
 namespace AdventureWorksManagement
 {
@@ -19,7 +20,7 @@ namespace AdventureWorksManagement
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            this.RootVisual = new MainPage();
+            this.RootVisual = new EmployeeMasterDetailsWindow();           
         }
 
         private void Application_Exit(object sender, EventArgs e)

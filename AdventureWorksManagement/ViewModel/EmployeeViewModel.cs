@@ -39,10 +39,15 @@ namespace AdventureWorksManagement.ViewModel
            set
            {
                employees = value;
-               RaisePropertyChanged("Employees");
+               RaisePropertyChanged("Employees");              
            }
            
        }
+
+
+      
+
+     
 
        /// <summary>
        /// Gets or sets the title.
@@ -131,16 +136,20 @@ namespace AdventureWorksManagement.ViewModel
        #endregion ------------------- PUBLIC PROPERTIES ----------------------
 
        #region ------------------------ CONSTRUCTORS -------------------------
+
+      
+              
        /// <summary>
        /// Initializes a new instance of the <see cref="EmployeeViewModel"/> class.
        /// </summary>
        /// <param name="agent">The service agent.</param>
        public EmployeeViewModel(IAdventureWorksRepository<IBaseModel> agent)           
        {
+          
            if(agent!= null)
             this.serviceAgent = agent;          
 
-           InitializeCommands();
+           InitializeCommands();          
        }
     
        #endregion --------------------- CONSTRUCTORS -------------------------
@@ -162,7 +171,7 @@ namespace AdventureWorksManagement.ViewModel
        private void Load()
        {
            try
-           {
+           {              
                if (IsBusy)
                {
                    return;
@@ -171,13 +180,14 @@ namespace AdventureWorksManagement.ViewModel
                IsBusy = true;
                Message = "Loading...";
 
-              
+
+
                // get customers
                serviceAgent.GetEmployees((p) =>
-               {                   
-                  Employees = new ObservableCollection<IBaseModel>(p);
-                  Message = String.Empty;
-                  IsBusy = false;
+               {
+                   Employees = new ObservableCollection<IBaseModel>(p);
+                   Message = String.Empty;
+                   IsBusy = false;
                });
                
            }

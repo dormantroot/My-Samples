@@ -29,8 +29,9 @@ namespace AdventureWorksManagement.ServiceAgents.Proxy_Adapters
         public void Adapt(Employee adaptee,Action<EmployeeModel> adapteePredicate)
         {
             EmployeeModel newEmpModel = new EmployeeModel();
-            newEmpModel.FirstName = adaptee.Title;
-            newEmpModel.LastName = adaptee.Id.ToString();
+            newEmpModel.Title = adaptee.Title;
+            newEmpModel.ID = adaptee.Id.ToString();
+            newEmpModel.Gender = adaptee.Gender;
 
             adapteePredicate(newEmpModel);                
         }      

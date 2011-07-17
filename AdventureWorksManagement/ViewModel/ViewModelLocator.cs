@@ -25,23 +25,35 @@ namespace AdventureWorksManagement.ViewModel
         /// </summary>
         static ViewModelLocator()
         {           
-            // define the Unity container and its settings
-            Container = new UnityContainer()
-                                  .RegisterType<IBaseModel, EmployeeModel>()
-                                  .RegisterType<IProxyObjectAdapter, EmployeeProxyObjectAdapter>()
-                                  .RegisterType<IViewModel, EmployeeViewModel>(new ContainerControlledLifetimeManager());
-                                 
+            try
+            {
+                // define the Unity container and its settings
+                Container = new UnityContainer()
+                                      .RegisterType<IBaseModel, EmployeeModel>()
+                                      .RegisterType<IProxyObjectAdapter, EmployeeProxyObjectAdapter>()
+                                      .RegisterType<IViewModel, EmployeeViewModel>(new ContainerControlledLifetimeManager());
 
-            if (ViewModelBase.IsInDesignModeStatic)
-            {
-                // create a dummy Model provider
-            }
-            else
-            {
-                Container .RegisterType(typeof(IAdventureWorksRepository<>), typeof(AdventureWorksWCFRepository));
-            }
+
+
+                if (ViewModelBase.IsInDesignModeStatic)
+                {
+                    // create a dummy Model provider
+                }
+                else
+                {
+                    Container.RegisterType(typeof(IAdventureWorksRepository<>), typeof(AdventureWorksWCFRepository));
+                }
 
          
+            }
+            catch (System.Exception ex)
+            {
+            	
+            }
+            finally
+            {
+            }
+           
         }
 
 
@@ -55,6 +67,8 @@ namespace AdventureWorksManagement.ViewModel
                 return Container.Resolve<EmployeeViewModel>();
             }
         }
+
+       
 
         /// <summary>
         /// Cleans up all the resources.
