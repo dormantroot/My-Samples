@@ -13,3 +13,8 @@ C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTe
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\ResolveAssemblyReference.cache
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\SOS.DataAccess.DataAccess.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\SOS.DataAccess.DataAccess.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\bin\Debug\SOS.DataAccess.DataAccess.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\bin\Debug\SOS.DataAccess.DataAccess.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\SOS.DataAccess.DataAccess.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Resource Access\SOS.DataAccess\obj\Debug\SOS.DataAccess.DataAccess.pdb

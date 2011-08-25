@@ -10,3 +10,9 @@ C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement.We
 C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement.Web.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement.Web.Tests\obj\Debug\AdventureWorksManagement.Web.Tests.dll
 C:\My Development\My Testing Ground\MyTesting Ground\AdventureWorksManagement.Web.Tests\obj\Debug\AdventureWorksManagement.Web.Tests.pdb
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\bin\Debug\AdventureWorksManagement.Web.Tests.dll.config
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\bin\Debug\AdventureWorksManagement.Web.Tests.dll
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\bin\Debug\AdventureWorksManagement.Web.Tests.pdb
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\obj\Debug\AdventureWorksManagement.Web.Tests.dll
+C:\My Development\My Testing Ground\My Testing Ground\AdventureWorksManagement.Web.Tests\obj\Debug\AdventureWorksManagement.Web.Tests.pdb

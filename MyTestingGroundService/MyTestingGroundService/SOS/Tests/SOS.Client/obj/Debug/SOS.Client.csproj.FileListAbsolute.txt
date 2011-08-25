@@ -28,3 +28,13 @@ C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTe
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\GenerateResource.write.1.tlog
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.Client.exe
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.Client.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\bin\Debug\SOS.Client.Client.exe.config
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\bin\Debug\SOS.Client.Client.exe
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\bin\Debug\SOS.Client.Client.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.MainForm.resources
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.ResultsGrid.resources
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\GenerateResource.read.1.tlog
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\GenerateResource.write.1.tlog
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.Client.exe
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Tests\SOS.Client\obj\Debug\SOS.Client.Client.pdb

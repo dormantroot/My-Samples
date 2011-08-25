@@ -20,13 +20,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:49696/AdventureWorks.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:57861/AdventureWorks.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AdventureWorksService.wsdl" MetadataType="Wsdl" ID="16d008e6-1efa-48b4-8f33-141fbadacf8c" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?wsdl" />
-    <MetadataFile FileName="AdventureWorks.disco" MetadataType="Disco" ID="cb4a1a3b-7ff7-4990-ab0e-76e48a8fa6d6" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?disco" />
-    <MetadataFile FileName="AdventureWorks.xsd" MetadataType="Schema" ID="7e12affa-b202-4ae0-9dc0-d8eafb95d0b0" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd0" />
-    <MetadataFile FileName="AdventureWorks1.xsd" MetadataType="Schema" ID="d43d9e96-3493-48ec-b658-8014da0a05ab" SourceId="1" SourceUrl="http://localhost:49696/AdventureWorks.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdventureWorks2.xsd" MetadataType="Schema" ID="b4893c0f-a5f7-4b72-b579-e8fa5552b058" SourceId="1" SourceUrl="http://localhost:57861/AdventureWorks.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdventureWorks1.disco" MetadataType="Disco" ID="323473cf-2c4a-4a55-bd4a-2b3d9645a0af" SourceId="1" SourceUrl="http://localhost:57861/AdventureWorks.svc?disco" />
+    <MetadataFile FileName="AdventureWorks21.xsd" MetadataType="Schema" ID="f3cbbde9-c034-4a3c-84b8-0a595dc607b2" SourceId="1" SourceUrl="http://localhost:57861/AdventureWorks.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdventureWorksService1.wsdl" MetadataType="Wsdl" ID="76405b50-0e72-4a8a-9bd6-c6cc934644d2" SourceId="1" SourceUrl="http://localhost:57861/AdventureWorks.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

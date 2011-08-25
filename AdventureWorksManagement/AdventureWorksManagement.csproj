@@ -142,29 +142,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
-    <None Include="Service References\AdvWorksManagementService\AdventureWorks.disco" />
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks21.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\AdvWorksManagementService\AdventureWorksManagement.AdvWorksManagementService.EmployeeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AdvWorksManagementService\AdventureWorksManagement.AdvWorksManagementService.PurchaseOrderDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorksService1.wsdl" />
     <None Include="Service References\AdvWorksManagementService\configuration91.svcinfo" />
     <None Include="Service References\AdvWorksManagementService\configuration.svcinfo" />
     <None Include="Service References\AdvWorksManagementService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\AdvWorksManagementService\AdventureWorks1.disco" />
     <Content Include="ServiceReferences.ClientConfig">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Service References\AdvWorksManagementService\AdventureWorks.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\AdvWorksManagementService\AdventureWorks1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\AdvWorksManagementService\AdventureWorksService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

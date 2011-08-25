@@ -31,3 +31,14 @@ C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTe
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\SOS.ServiceContracts.ServiceContracts.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\SOS.ServiceContracts.ServiceContracts.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.ServiceContracts.ServiceContracts.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.ServiceContracts.ServiceContracts.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.DataContracts.DataContracts.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.FaultContracts.FaultContracts.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.MessageContracts.MessageContracts.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.DataContracts.DataContracts.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.FaultContracts.FaultContracts.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\bin\Debug\SOS.MessageContracts.MessageContracts.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\SOS.ServiceContracts.ServiceContracts.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\SOS\Source\Service Interface\SOS.ServiceContracts\obj\Debug\SOS.ServiceContracts.ServiceContracts.pdb

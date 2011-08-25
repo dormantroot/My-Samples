@@ -22,3 +22,15 @@ C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTe
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.DomainObjects.pdb
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\obj\Debug\ServiceTests.dll
 C:\My Development\My Testing Ground\MyTesting Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\obj\Debug\ServiceTests.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\ServiceTests.dll.config
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\ServiceTests.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\ServiceTests.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.BusinessLogic.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.DataAccess.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.DomainObjects.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.BusinessLogic.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.DataAccess.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\bin\Debug\MyTestingGround.DomainObjects.pdb
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\obj\Debug\ResolveAssemblyReference.cache
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\obj\Debug\ServiceTests.dll
+C:\My Development\My Testing Ground\My Testing Ground\MyTestingGroundService\MyTestingGroundService\ServiceTests\obj\Debug\ServiceTests.pdb
